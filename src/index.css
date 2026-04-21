@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #964900;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #723600;
+  --color-on-primary-container: #ffdcc7;
+  --color-primary-fixed: #ffdcc7;
+  --color-primary-fixed-dim: #ffb787;
+  --color-brand-brown: #723600;
+
+  --color-secondary: #13696d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a5eff3;
+  --color-on-secondary-container: #1d6f73;
+
+  --color-tertiary: #005312;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #1b6d24;
+  --color-on-tertiary-container: #99ec93;
+
+  --color-background: #fbf9f8;
+  --color-on-background: #1b1c1b;
+
+  --color-surface: #fbf9f8;
+  --color-on-surface: #1b1c1b;
+  --color-surface-variant: #e4e2e1;
+  --color-on-surface-variant: #554338;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f2;
+  --color-surface-container: #efedec;
+  --color-surface-container-high: #e9e8e7;
+  --color-surface-container-highest: #e4e2e1;
+  
+  --color-outline: #887367;
+  --color-outline-variant: #dbc2b3;
+  
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.saffron-gradient {
+  background: linear-gradient(135deg, #723600 0%, #964900 100%);
+}
+
+.atelier-glass {
+  background: rgba(251, 249, 248, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.thali-gauge {
+  background: conic-gradient(
+    #964900 0% 65%, 
+    #005312 65% 85%, 
+    #ba1a1a 85% 100%
+  );
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px -10px rgba(85, 67, 56, 0.08);
+}
